@@ -4,8 +4,8 @@ import interfaces.Cadastravel;
 
 public class Reserva implements Cadastravel {
     private String id;
-    private Hospede hospede; // Composição / Agregação
-    private int numeroQuarto; // Associação pelo número do quarto
+    private Hospede hospede;
+    private int numeroQuarto;
     private String dataEntrada;
     private String dataSaida;
     private StatusReserva status;
@@ -16,10 +16,9 @@ public class Reserva implements Cadastravel {
         this.numeroQuarto = numeroQuarto;
         this.dataEntrada = dataEntrada;
         this.dataSaida = dataSaida;
-        this.status = StatusReserva.ATIVA; // Toda reserva começa como ativa
+        this.status = StatusReserva.ATIVA;
     }
 
-    // Getters e Setters
     @Override
     public String getId() { return id; }
     public Hospede getHospede() { return hospede; }
@@ -31,7 +30,6 @@ public class Reserva implements Cadastravel {
 
     @Override
     public String toJson() {
-        // Formato JSON manual simples para não depender de bibliotecas externas pesadas
         return "{" +
                 "\"id\":\"" + id + "\"," +
                 "\"idHospede\":\"" + hospede.getId() + "\"," +

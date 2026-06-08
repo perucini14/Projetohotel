@@ -49,7 +49,6 @@ public class ReservaView {
         System.out.print("ID da Reserva: ");
         String id = scanner.nextLine();
 
-        // Aqui simulamos a busca do hóspede. Na unificação, você chamará o HospedeController do Lucas.
         System.out.print("Nome do Hóspede (Simulado): ");
         String nomeHospede = scanner.nextLine();
         Hospede hospedeSimulado = new Hospede(id + "_h", nomeHospede, "000.000.000-00", "", "");

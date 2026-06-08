@@ -2,7 +2,7 @@ package controller;
 
 import model.Reserva;
 import model.StatusReserva;
-import util.ArquivoUtil; // Classe utilitária que o Felipe vai criar
+import util.ArquivoUtil;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,6 @@ public class ReservaController {
     }
 
     public void abrirReserva(Reserva novaReserva) throws Exception {
-        // Exemplo de validação de regra de negócio (Tratamento de Exceções)
         for (Reserva r : listaReservas) {
             if (r.getNumeroQuarto() == novaReserva.getNumeroQuarto() && r.getStatus() == StatusReserva.ATIVA) {
                 throw new Exception("Erro: O quarto " + novaReserva.getNumeroQuarto() + " já possui uma reserva ativa!");
@@ -65,7 +64,6 @@ public class ReservaController {
         return listaReservas;
     }
 
-    // Métodos de Persistência integrados com o ArquivoUtil do Felipe
     public void salvarEmArquivo() {
         StringBuilder jsonBuilder = new StringBuilder("[\n");
         for (int i = 0; i < listaReservas.size(); i++) {
@@ -74,15 +72,12 @@ public class ReservaController {
         }
         jsonBuilder.append("\n]");
 
-        // Chama a classe estática do Felipe
         ArquivoUtil.salvar(CAMINHO_ARQUIVO, jsonBuilder.toString());
     }
 
     public void carregarDeArquivo() {
         try {
             String conteudo = ArquivoUtil.ler(CAMINHO_ARQUIVO);
-            // Aqui o Felipe ou o grupo podem implementar um parser de JSON real.
-            // Para a sua branch funcionar sozinha, deixamos a lista pronta para receber dados.
             System.out.println("Dados de reservas carregados com sucesso!");
         } catch (Exception e) {
             System.out.println("Arquivo de reservas não encontrado. Criando novo banco de dados...");
