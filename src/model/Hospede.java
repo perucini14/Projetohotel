@@ -33,7 +33,7 @@ public class Hospede implements Cadastravel {
         System.out.println("Telefone: " + telefone);
     }
 
-    // Getters e Setters
+    
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
 
@@ -46,12 +46,12 @@ public class Hospede implements Cadastravel {
     public String getTelefone() { return telefone; }
     public void setTelefone(String telefone) { this.telefone = telefone; }
 
-    // Converte para linha de texto para salvar no arquivo
+ 
     public String paraArquivo() {
         return id + ";" + nome + ";" + cpf + ";" + email + ";" + telefone;
     }
 
-    // Cria um Hospede a partir de uma linha do arquivo
+    
     public static Hospede deArquivo(String linha) {
         String[] partes = linha.split(";");
         return new Hospede(partes[0], partes[1], partes[2], partes[3], partes[4]);
