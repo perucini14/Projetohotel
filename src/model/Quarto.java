@@ -10,14 +10,14 @@ public abstract class Quarto implements Cadastravel {
     public Quarto(int numero, int andar) {
         this.numero = numero;
         this.andar = andar;
-        this.disponivel = true; // Por padrão, um quarto novo está disponível
+        this.disponivel = true; 
     }
 
-    // Métodos abstratos exigidos
+    
     public abstract double calcularDiaria();
     public abstract String getTipo();
 
-    // Getters e Setters
+    
     public int getNumero() { return numero; }
     public void setNumero(int numero) { this.numero = numero; }
 
