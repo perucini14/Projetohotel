@@ -36,7 +36,7 @@ public class Funcionario implements Cadastravel {
         System.out.println("Cargo:     " + cargo);
     }
 
-    // Getters e Setters
+    
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
 
@@ -49,12 +49,12 @@ public class Funcionario implements Cadastravel {
     public String getSenha() { return senha; }
     public void setSenha(String senha) { this.senha = senha; }
 
-    // Converte para linha de texto para salvar no arquivo
+  
     public String paraArquivo() {
         return id + ";" + nome + ";" + matricula + ";" + cargo.name() + ";" + senha;
     }
 
-    // Cria um Funcionario a partir de uma linha do arquivo
+    
     public static Funcionario deArquivo(String linha) {
         String[] partes = linha.split(";");
         return new Funcionario(partes[0], partes[1], partes[2], Cargo.valueOf(partes[3]), partes[4]);
