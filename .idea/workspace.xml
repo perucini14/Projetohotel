@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4f1001d-1c4f-40f9-9648-4ee72528bb3b" name="Changes" comment="Parte Gabriel Pronta">
-      <change beforePath="$PROJECT_DIR$/src/controller/ReservaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ReservaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/controller/PagamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PagamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/controller/QuartoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/QuartoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/exceptions/NumeroDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/NumeroDuplicadoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/exceptions/QuartoNaoEncontradoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/QuartoNaoEncontradoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/interfaces/Cadastravel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/model/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/model/Quarto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Quarto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/model/QuartoLuxo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/QuartoLuxo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/model/QuartoStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/QuartoStandard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/model/Suite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Suite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/util/ArquivoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ArquivoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/view/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/view/PagamentoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/PagamentoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetohotel/src/view/QuartoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/QuartoView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ReservaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ReservaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Servico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Servico.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +44,12 @@
     &quot;assignee&quot;: &quot;gssprada-bit&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/perucini14/Projetohotel.git&quot;,
-    &quot;accountId&quot;: &quot;033377e1-7980-4b94-afff-3a9e885dbc9e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/perucini14/Projetpdohotel.git",
+    "accountId": "6b7c2e1a-1d53-40b4-a954-3062599d302c"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -51,24 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/gabriel&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gsspr/Projetpdohotel/Projetohotel/src/MVC1&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/gsspr/Projetpdohotel/Projetohotel/src/MVC1",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gsspr\Projetpdohotel\Projetohotel\src\MVC1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas\OneDrive\Desktop\Trabalho MVC\ProjetPdoHotel\src" />
+      <recent name="C:\Users\lucas\OneDrive\Desktop\Trabalho MVC\ProjetPdoHotel\src\view" />
+      <recent name="C:\Users\lucas\OneDrive\Desktop\Trabalho MVC\ProjetPdoHotel\src\model" />
+      <recent name="C:\Users\lucas\OneDrive\Desktop\Trabalho MVC\ProjetPdoHotel\src\exceptions" />
+      <recent name="C:\Users\lucas\OneDrive\Desktop\Trabalho MVC\ProjetPdoHotel\src\interfaces" />
     </key>
   </component>
   <component name="SharedIndexes">

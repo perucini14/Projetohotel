@@ -21,7 +21,7 @@ public class Servico implements Cadastravel {
     public TipoServico getTipo() { return tipo; }
     public double getValor() { return valor; }
 
-    @Override
+
     public String toJson() {
         return "{" +
                 "\"id\":\"" + id + "\"," +

@@ -28,7 +28,7 @@ public class Reserva implements Cadastravel {
     public StatusReserva getStatus() { return status; }
     public void setStatus(StatusReserva status) { this.status = status; }
 
-    @Override
+
     public String toJson() {
         return "{" +
                 "\"id\":\"" + id + "\"," +
