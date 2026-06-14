@@ -16,7 +16,7 @@ public class HospedeController {
         carregarDeArquivo();
     }
 
-    // CRUD
+    
 
     public void adicionar(String nome, String cpf, String email, String telefone) {
         for (Hospede h : hospedes) {
@@ -68,7 +68,7 @@ public class HospedeController {
         throw new IllegalArgumentException("Hóspede não encontrado com ID: " + id);
     }
 
-    // Persistência
+    
 
     public void salvarEmArquivo() {
         try {
