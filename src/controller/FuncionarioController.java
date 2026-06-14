@@ -17,7 +17,7 @@ public class FuncionarioController {
         carregarDeArquivo();
     }
 
-    // CRUD
+    
 
     public void adicionar(String nome, String matricula, Cargo cargo, String senha) {
         for (Funcionario f : funcionarios) {
@@ -69,7 +69,7 @@ public class FuncionarioController {
         throw new IllegalArgumentException("Funcionário não encontrado com ID: " + id);
     }
 
-    // Persistência
+    
 
     public void salvarEmArquivo() {
         try {
