@@ -3,12 +3,11 @@ package controller;
 import exceptions.NumeroDuplicadoException;
 import exceptions.QuartoNaoEncontradoException;
 import model.Quarto;
-//import util.ArquivoUtil; // Utilitário que será feito pelo Felipe [cite: 8]
 import java.util.ArrayList;
 
 public class QuartoController {
-    private ArrayList<Quarto> quartos; // Coleção exigida
-    private final String ARQUIVO_DADOS = "dados/quartos.json"; // Arquivo JSON na pasta /dados [cite: 6, 12]
+    private ArrayList<Quarto> quartos; 
+    private final String ARQUIVO_DADOS = "dados/quartos.json"; 
 
     public QuartoController() {
         this.quartos = new ArrayList<>();
@@ -76,9 +75,9 @@ public class QuartoController {
         }
         json.append("]");
 
-        // Chamada ao utilitário do Felipe (simulada aqui para não quebrar seu código) [cite: 8]
+       
         try {
-            // ArquivoUtil.salvar(ARQUIVO_DADOS, json.toString());
+           
             System.out.println("Dados dos quartos salvos com sucesso em " + ARQUIVO_DADOS);
         } catch (Exception e) {
             System.out.println("Erro ao salvar arquivo: " + e.getMessage());
@@ -86,8 +85,6 @@ public class QuartoController {
     }
 
     public void carregarDeArquivo() {
-        // Como você não deve depender do Felipe agora para ler JSON complexo[cite: 2],
-        // você pode deixar o método preparado para ser integrado depois no MenuPrincipal[cite: 9].
         System.out.println("Carregando dados de " + ARQUIVO_DADOS + "...");
     }
 }
